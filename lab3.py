@@ -143,6 +143,8 @@ while tf:
     else:
         print("Дисперсія не однорідна при рівні значимості {:.2f}!".format(q))
         m += 1
+    if m > 23:
+        exit()
 
 for i in range(4):
     matrix.append(matrix_x[i] + matrix_y[i])
